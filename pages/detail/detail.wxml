@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+  <view>姓名：{{itemList.name}}</view>
+  <view>号码：{{itemList.no}}</view>
+  <view>球队：{{itemList.team}}</view>
+  <view>薪资：{{itemList.salary}}</view>

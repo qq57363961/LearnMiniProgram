@@ -1,13 +1,7 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>组件间传值</view>
+<text>方式一：通过url传值\n 例：从index页面向detail页面传值\n</text>
+<view wx:for="{{proList}}" bindtap="toDetail" data-index="{{index}}">
+  <view>姓名：{{item.name}}</view>
+  <view>号码：{{item.no}}</view>
 </view>
