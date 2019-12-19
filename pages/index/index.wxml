@@ -1,13 +1,12 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!-- index.wxml   index.js -->
+<!-- 1.小程序的数据绑定 {{}} Mastache -->
+<view>Hello {{name}}</view>
+
+<!-- 2.列表渲染 -->
+<!-- 小程序循环时自动生成一个变量item，表示每一个循环出来的元素 -->
+<view wx:for="{{students}}">{{item.name}} - {{item.id}}</view>
+
+<!-- 3.事件绑定 -->
+<button size="mini" bindtap="add">+</button>
+<view>当前计数：{{n}}</view>
