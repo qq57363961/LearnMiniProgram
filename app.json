@@ -5,9 +5,13 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "哈大毛Demo",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F5DC",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "pageOrientation": "portrait"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

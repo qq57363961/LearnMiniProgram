@@ -1,13 +1,10 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<text>
+  导航栏设置\n
+    navigationBarBackgroundColor 导航栏背景色
+    navigationBarTitleText 大标题
+    navigationBarTextStyle 导航栏字体颜色
+    backgroundColor 下拉刷新显示区域颜色
+    enablePullDownRefresh 可不可以下拉刷新
+    pageOrientation 横竖屏
+</text>
