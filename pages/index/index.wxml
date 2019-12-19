@@ -1,13 +1,9 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<text>
+  tabBar设置详情在app.json中
+  (1)新增images夹，放几张图片
+  (2)在app.json中配置tabBar\n
+      selectedColor 字体颜色
+      iconPath 默认显示图片路径
+      selectedIconPath 选中时显示的图片路径
+</text>
