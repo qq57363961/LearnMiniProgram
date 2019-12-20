@@ -1,6 +1,11 @@
 {
   "pages": [
+    "pages/input/input",
+    "pages/image/image",
+    "pages/view/view",
     "pages/index/index",
+    "pages/text/text",
+    "pages/button/button",
     "pages/logs/logs"
   ],
   "window": {
@@ -8,6 +13,30 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list": [
+      {
+        "pagePath": "pages/input/input",
+        "text": "input"
+      },
+      {
+        "pagePath": "pages/image/image",
+        "text": "image"
+      },
+      {
+        "pagePath": "pages/view/view",
+        "text": "view"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "text": "文本"
+      },
+      {
+        "pagePath": "pages/button/button",
+        "text": "按钮"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

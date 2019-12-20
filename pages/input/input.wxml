@@ -1,0 +1,24 @@
+<!--pages/input/input.wxml-->
+<!-- 参考官方文档  组件--表单组件 -->
+
+<!-- 1.input的基本使用  单双标签都可以-->
+<input></input>
+
+<!-- 2.value -->
+<input value="哈哈哈"></input>
+
+<!-- 3.type  决定键盘类型(文本输入键盘/数字/身份证) -->
+<!-- 真机弹出数字键盘 -->
+<input type="number"></input>
+<!-- 暗文输入 -->
+<input type="password"></input>
+<input password></input>
+
+<!-- 4.placeholder占位 -->
+<input placeholder="请输入账号"></input>
+
+<!-- 5.confirm-type 输入完成后右下角显示的按钮上的文字  取值：send search next go done -->
+<input confirm-type="next"></input>
+
+<!-- 6.input绑定事件 bindblur  bindconfirm  bindfocus bindinput -->
+监听：<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"></input>

@@ -1,0 +1,14 @@
+<!--pages/view/view.wxml-->
+<!-- 块级元素，独占一行，作为容器 -->
+<!-- 1.view的基本使用 -->
+<view class="box">哈哈哈</view>
+<view>呵呵呵</view>
+
+<!-- 2.hover-class 当用户按下组件时，显示的样式-->
+<!-- 3.hover-stay-time   hover-start-time  hover-stop-propagation-->
+<view class="box2" hover-class="hover-box2">
+<!-- hover-stop-propagation="{{true}}" 可以写成 hover-stop-propagation -->
+  <view class="box1" hover-class="hover-box1" hover-start-time="{{0}}" hover-stay-time="{{0}}" hover-stop-propagation="{{true}}">box1</view>
+</view>
+
+

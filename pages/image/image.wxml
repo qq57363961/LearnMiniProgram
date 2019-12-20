@@ -1,0 +1,39 @@
+<!--pages/image/image.wxml-->
+
+<!--
+ 1.image的基本使用，
+  （1）可以写成单标签，也可以写成双标签
+  （2）image组件有默认自己的大小 320 x 240
+  （3）image组件是一个行内块级元素
+-->
+
+<!-- 2.src 本地地址/远程地址 -->
+<!-- 本地相对路径 -->
+<image src="./葱花.jpg"></image>
+<!-- 本地绝对路径 -->
+<image src="/pages/image/葱花.jpg" ></image>
+<!-- 远程地址 -->
+<image src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2474359490,1160804813&fm=26&gp=0.jpg"></image>
+<!-- 相册中的图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"></image>
+
+<!-- 3.bindload 监听图片加载完成 -->
+<!-- 4.lazy-load 懒加载，经常使用，默认图片都不是懒加载,当图片进入范围内(上下三屏)开始加载-->
+<image wx:for="{{1}}" src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1095903005,1370184727&fm=26&gp=0.jpg" bindload="handleImageLoad" lazy-load="{{true}}"></image>
+
+<!-- 5.show-menu-by-longpress 长按识别图中小程序码 -->
+<image src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1095903005,1370184727&fm=26&gp=0.jpg" show-menu-by-longpress></image>
+
+<!-- 6.mode 设置图片裁剪，拉伸模式 -->
+<!-- 
+  (1)scaleToFill  默认值，缩放填满容器
+  (2)aspectFit  保持纵横缩放，优先长边
+  (3)aspectFill  保持纵横缩放，优先短边
+  (4)widthFix  保持比例缩放，宽度不变，高度变化
+  其它属性不常用，参考官方文档  组件---媒体组件---image
+ -->
+<image src="./th_qq.png" mode="scaleToFill"></image>
+<image src="./th_qq.png" mode="aspectFit"></image>
+<image src="./th_qq.png" mode="aspectFill"></image>
+<image src="./th_qq.png" mode="widthFix"></image>

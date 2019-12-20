@@ -1,0 +1,35 @@
+<!--pages/button/button.wxml-->
+<!-- button组件的使用 -->
+
+<!-- 1.button的基本使用 大按钮独占一行-->
+<button>按钮</button>
+
+<!-- 2.size 小按钮是行内元素-->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+
+<!-- 3.type -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 4.plain 镂空效果 -->
+<button size="mini" plain>按钮</button>
+
+<!-- 5.disabled 不可用 -->
+<button size="mini" disabled>按钮</button>
+
+<!-- 6.loading -->
+<!-- 可以动态控制loading属性来显示按钮转圈加载效果 -->
+<button size="mini" loading="{{isLoading}}">按钮</button>
+
+<!-- 7.hover-class -->
+<!-- 点下去的时候背景显示红色,字体白色 -->
+<button size="mini" hover-class="pressed">按钮</button>
+
+<!-- 8.open-type -->
+<!-- 后面再详细分析 -->
+<button open-type="contact">客服会话</button>
+<button open-type="share">程序分享</button>
+<button open-type="getPhoneNumber">获取电话</button>
+<button open-type="getUserInfo">用户信息</button>
