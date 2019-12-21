@@ -1,0 +1,22 @@
+/* pages/scrollview/scrollview.wxss */
+.container1{
+  background: purple;
+  white-space: nowrap;  /* 内容不换行 */
+}
+.item1{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  background: red;
+  display: inline-block; /* 让每个item变为行内块级元素 */
+}
+.container2{
+  background: orange;
+  height: 300rpx;
+  margin-top: 20px;
+}
+.item2{
+  height: 100rpx;
+  background: blue;
+  margin: 10rpx;
+}
